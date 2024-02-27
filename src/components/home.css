@@ -1,0 +1,97 @@
+* {
+    background-color: rgb(35, 35, 35);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 16rem;
+    transform: translateY(-50px);
+}
+
+.main-img {
+    width: 50rem;
+    animation: fadeIn 3s ease-in-out forwards;
+    /* Animation for the image */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn1 {
+    font-family: 'Cinzel', serif;
+    padding: .8rem 1.5rem;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 16rem;
+    cursor: pointer;
+    /* opacity: 0; */
+    animation: fadeInButton 2s ease-in-out 2s backwards;
+    text-decoration: none;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.btn1:hover {
+    background-color: white;
+    color: rgb(92, 92, 92);
+}
+
+/* media */
+
+@media screen and (max-width: 850px) {
+    .main-img {
+        width: 35rem;
+    }
+
+    .btn1 {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-img {
+        width: 25rem;
+    }
+
+    .btn1 {
+        padding: .5rem 1rem;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-img {
+        width: 18rem;
+    }
+
+    .btn1 {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
+}

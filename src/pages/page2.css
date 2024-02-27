@@ -1,0 +1,50 @@
+.btn2 {
+    font-family: 'Cinzel', serif;
+    padding: .8rem 1.5rem;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 16rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: rgb(92, 92, 92);
+}
+
+
+
+
+/* media */
+
+@media screen and (max-width: 850px) {
+
+    .btn2 {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .btn2 {
+        padding: .5rem 1rem;
+        font-size: .7rem;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .btn2 {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+
+    }
+}
